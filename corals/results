@@ -1,0 +1,29 @@
+                        mbp chrome          mbp safari          huawei 101 chrome
+
+test-1 
+    fabric              ~ 0.03              ~ 0.4               ~ 0.7
+    paper (X)           ~ 0.05              ~ 0.1               ~ 40
+    cannative-x         ~ 0.2               ~ 0.2               ~ 1
+    cannative           ~ 0.8               ~ 0.17              ~ 4.7
+    native              ~ 7                 ~ 5.5               ~ 45
+    html2canvas         too long            too long            too long
+    
+test-2 
+    fabric              ~ 0.04              ~ 0.25              ~ 0.6
+    paper (X)           ~ 0.07              ~ 0.1               ~ 1
+    cannative-x         ~ 0.8               ~ 1.8               ~ 12
+    cannative           ~ 2                 ~ 0.3               ~ 10 - 50
+    native              ~ 30 - 100          ~ 90                too long
+    html2canvas         too long            too long            too long
+    
+
+    
+    
+    
+    
+    
+vaporized
+    rasterizehtml
+    
+misc
+    paper likes to warm up on first load

@@ -1,0 +1,27 @@
+can't render imgs, text
+
+how to load imgs, text?
+inline them.
+	like this for fonts:
+		to make fonts into URI: https://github.com/mnjul/webfont-loader-with-progress/blob/master/loader.js
+		to make URI into inlined: https://stackoverflow.com/questions/37083459/html-use-an-svg-image-which-contains-a-custom-font
+		or this: 
+	like this for images: https://stackoverflow.com/questions/7650587/using-javascript-to-display-blob
+	misc:
+		general usage of createObjectURl: https://developers.google.com/web/updates/2012/06/Don-t-Build-Blobs-Construct-Them
+			and: https://developers.google.com/web/updates/2012/06/Don-t-Build-Blobs-Construct-Them
+		
+		 
+
+
+
+
+misc features:
+	render/inline styles as well
+		(is this already done using drawImage?
+			more accurately; are styles applied to an image string? no, i think. maybe thats why its fast.
+			which svgs shouldnt have anyway
+			so just avoid it.
+		)
+	add basic 3d support: https://github.com/ndebeiss/svg3d
+	syncing with dom'ed layer

@@ -1,0 +1,57 @@
+@ https://chromium.googlesource.com/chromium/src/+/master/third_party/WebKit/Source/core
+
+TRAP [2 years outdated version]: https://chromium.googlesource.com/chromium/blink/+/master/Source/core/svg
+
+
+
+
+
+
+
+
+LayoutSVGRoot @ core/layout/svg/LayoutSVGRoot.h : LayoutObject
+
+
+
+LocalFrameView @ core/frame/LocalFrameView.h
+    ::PaintTree()
+        --- view.Compositor()->RootGraphicsLayer()->PaintRecursively()
+    
+        ---
+        LayoutView @ core/layout/LayoutView.h : LayoutBlockFlow : ... : LayoutObject
+            ::Compositor() --> PaintLayerCompositor @ core/paint/compositing/PaintLayerCompositor.h
+    
+        ---
+        PaintLayerCompositor @ core/paint/compositing/PaintLayerCompositor.h
+            ::RootGraphicsLayer()
+                --- layout_view_.Layer(){PaintLayer}->GetCompositedLayerMapping(){CompositedLayerMapping}->ChildForSuperlayers(){GraphicsLayer}
+            
+        LayoutBoxModelObject : LayoutObject @ core/layout/LayoutBoxModelObject.h
+            ::Layer()      
+                layer seems to be gotten at
+                --- FirstFragment().GetRarePaintData()->Layer()
+        
+        LayoutObject @ core/layout/LayoutObject.h
+            constructor made with Element!!!
+            can i make layouts here?
+            
+            ::SetVisualRect()
+        
+        FragmentData @ core/paint/FragmentData.h
+            rare_paint_data made using
+            --- rare_paint_data_ = std::make_unique<RarePaintData>(visual_rect_.Location());
+        
+        RarePaintData @ core/paint/RarePaintData.h
+            layer set using
+            --- layer_ = std::move(layer);
+            
+        ---
+        PaintLayer @ core/paint/PaintLayer.h
+            ::GetCompositedLayerMapping ()
+                --- rare_data_->composited_layer_mapping.get(){CompositedLayerMapping}
+                
+        CompositedLayerMapping @ core/paint/compositing/CompositedLayerMapping.h
+                --- {GraphicsLayer}
+                
+        ---
+        GraphicsLayer @ platform/graphics/GraphicsLayer.h

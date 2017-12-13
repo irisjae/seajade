@@ -1,0 +1,30 @@
+[X] cairo (too low level)
+[X] skia (too low level. try blink.)
+[X] imageMagick (not fully implemented)
+[X] chromium (too low level. try blink.) (for help, consider researching electron, webkit.js, iridium, [https://electronjs.org/blog/electron-internals-building-chromium-as-a-library])
+[X] blink (pathologicalable perf) (too complex. not modular. cannot get render code without all dom functions and platform dependent code)
+[X] html2canvas new version (svg parser incomplete)
+[-] webkit (pathologicalable perf) (https://github.com/WebKit/webkit/tree/master/Source/WebCore/svg) (no shadows???)
+[X] html2canvas (patching seems to mess up rendering) (fixing perf indicates this is slow af)
+[-] wxsvg (no mask and clippath)
+[X] batik (mostly accurate, but very slow)
+librsvg (inaccurate??)
+fabric.js {patch parser}
+webkit (direct render to canvas) (no shadows???)
+[-] blink (direct render to canvas)
+[X] two.js (https://github.com/jonobr1/two.js)
+svgl (no mask?)
+svgren (likely lacklustre support)
+cairosvg
+reverse engineer figma
+reverse engineer amanithsvg
+
+
+
+
+Stop Gap:
+direct canvas rendering
+
+Long Run:
+[O] fabric.js (js; high impact)
+librsvg (wiki: high impact)

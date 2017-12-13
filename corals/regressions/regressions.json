@@ -1,0 +1,109 @@
+{
+    "title": [],
+    "desc": [],
+    "g": [
+        "id",
+        "transform",
+        "clip-path",
+        "filter",
+        "mask",
+        "style"
+    ],
+    "clippath": [
+        "id",
+        "clip-rule"
+    ],
+    "path": [
+        "d",
+        "fill",
+        "id",
+        "fill-rule"
+    ],
+    "use": [
+        "xlink:href",
+        "transform",
+        "fill",
+        "fill-opacity"
+    ],
+    "defs": [],
+    "filter": [
+        "id",
+        "filterUnits",
+        "x",
+        "y",
+        "width",
+        "height",
+        "color-interpolation-filters"
+    ],
+    "feflood": [
+        "flood-opacity",
+        "result"
+    ],
+    "fecolormatrix": [
+        "in",
+        "type",
+        "values",
+        "result"
+    ],
+    "feoffset": [
+        "dx",
+        "dy"
+    ],
+    "fegaussianblur": [
+        "stdDeviation",
+        "result"
+    ],
+    "feblend": [
+        "mode",
+        "in2",
+        "result",
+        "in"
+    ],
+    "pattern": [
+        "id",
+        "patternUnits",
+        "patternContentUnits",
+        "width",
+        "height"
+    ],
+    "lineargradient": [
+        "id",
+        "x1",
+        "y1",
+        "x2",
+        "y2",
+        "gradientUnits",
+        "gradientTransform"
+    ],
+    "stop": [
+        "offset",
+        "stop-color",
+        "stop-opacity"
+    ],
+    "image": [
+        "id",
+        "width",
+        "height",
+        "preserveAspectRatio",
+        "xlink:href"
+    ],
+    "rect": [
+        "x",
+        "y",
+        "width",
+        "height",
+        "fill",
+        "id",
+        "transform"
+    ],
+    "mask": [
+        "id",
+        "mask-type"
+    ],
+    "fecomposite": [
+        "in2",
+        "operator",
+        "k2",
+        "k3"
+    ]
+}
